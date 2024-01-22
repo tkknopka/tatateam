@@ -1,6 +1,3 @@
-@import url(assets/css/fonts.css);
-@import url(assets/css/menu.css);
-
 html {
     scroll-behavior: auto; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */ 
 }
