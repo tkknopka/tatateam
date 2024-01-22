@@ -128,7 +128,7 @@ button {
     display: none;
 }
 h1 {
-    font-family: Gilroy;
+    font-family: Gilroy, sans-serif;
     font-size: 100px;
     font-style: normal;
     font-weight: 300;
@@ -136,7 +136,7 @@ h1 {
     letter-spacing: -6px;
 }
 h2 {
-    font-family: Gilroy;
+    font-family: Gilroy, sans-serif;
     font-size: 50px;
     font-style: normal;
     font-weight: 300;
