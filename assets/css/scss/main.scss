@@ -75,23 +75,24 @@
     background-color: var(--blue-bg);
     height: 72px;
     overflow-x: hidden;
+    span {
+        animation: marquee 15s infinite linear;
+        font-family: Gilroy;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.6px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        display: inline-block;
+        &::before,
+        &::after {
+        content: '{Анализ}{Дизайн}{Разработка}{Поддержка} /';
+        }
+    }
 }
-.running-line__item {
-    animation: marquee 15s infinite linear;
-    font-family: Gilroy;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.6px;
-    text-transform: uppercase;
-    white-space: nowrap;
-    display: inline-block;
-}
-.running-line__item::before,
-.running-line__item:after {
-    content: '{Анализ}{Дизайн}{Разработка}{Поддержка} /';
-}
+
 @keyframes marquee {
     0% {
         transform: translateX(100%);
