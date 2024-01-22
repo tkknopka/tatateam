@@ -1,0 +1,71 @@
+// Шапка
+.header {
+    .container {
+        padding: 16px 0px;
+    }
+}
+.header-items {
+    align-items:center;
+    .logo {
+        grid-column: span 1;
+    }
+    .header-item {
+        gap: 25px;
+        grid-column: span 1;
+        &:last-child {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    nav ul {
+        gap: 25px;
+        a:hover {
+            color:var(--blue);
+        }
+    }
+}
+// Главная стр, главный экран
+.main-screen {
+    padding-top: 64px;
+    padding-bottom: 120px;
+}
+.main-screen__items {
+    align-self: stretch;
+    .main-screen__item:first-child {
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        gap: 0 25px;
+        h1{
+            grid-column: span 3;
+            margin-bottom: 148px;
+        }
+        span {
+            display:inline-block;
+            grid-column: 2 / 3;
+        }
+    }
+    .main-screen__item:last-child {
+        grid-column: span 2;
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px 25px;
+            li{
+	            grid-column: span 1;
+                flex-direction: column;
+                .main-screen__img {
+                    display: flex;
+                    height: 64px;
+                    width: 64px;
+                    border-radius: 45px;
+                    border: 1px solid var(--Gray-07, #626262);
+                    padding: 16px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+}

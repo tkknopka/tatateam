@@ -1,0 +1,224 @@
+@import url(/assets/css/fonts.css);
+@import url(/assets/css/menu.css);
+
+html {
+    scroll-behavior: auto; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */ 
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* цвета */
+:root {
+    --black-bg: #101010;
+    --black-txt: #434343;
+    --white: #FFFFFF;
+    --white-h: #F8F8F8;
+    --white-txt: #BEBEBE;
+    --gray-04: #BEBEBE;
+    --blue: #2EA4FF;
+    --blue-bg:#0063CA;
+  
+}
+/* переменные */
+:root {
+    --xsWidth: 414px;
+    --smWidth: 768px;
+    --mdWidth: 1024px;
+    --lgWidth: 1280px;
+    --xlWidth: 1360px;
+    --xxlWidth: 1920px;
+}
+/* основная сетка */
+.container,
+.widget-area {
+    max-width: var(--xlWidth);
+    width: 100%;
+    margin: 0 auto;
+}
+/* flexbox css */
+.d-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.--just-space {
+    justify-content: space-between;
+}
+
+.--just-center {
+    justify-content: center;
+}
+
+.--just-end {
+    justify-content: flex-end;
+}
+
+.--align-str {
+    align-items: stretch;
+}
+
+.--align-center {
+    align-items: center;
+}
+
+.--align-end {
+    align-items: flex-end;
+}
+
+.--dir-col {
+    flex-direction: column;
+}
+/* основные стили */
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.6px;
+}
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    margin-left: 0px;
+    list-style: none;
+}
+input[type="text"],
+input[type="reset"],
+input[type="submit"],
+button,
+select,
+textarea {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input {outline:none;}
+button {
+    border: 0;
+    border-radius: 0;
+}
+.desktop {
+    display: block;
+}
+.mobile {
+    display: none;
+}
+h1 {
+    font-family: Gilroy;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%; /* 100px */
+    letter-spacing: -6px;
+}
+h2 {
+    font-family: Gilroy;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%; /* 55px */
+    letter-spacing: -3px;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--blue);
+}
+p {
+    margin: 0;
+}
+ /* разный фон для разных страниц */
+body.home {
+    background-color:var(--black-bg);
+    color: var(--white-h);
+}
+body.service {
+    background-color:var(--white);
+    color: var(--black-txt);
+}
+/* сетка grid */
+.grid-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0 25px;
+}
+/* адаптив */
+
+@media screen and (max-width: 1360px) {
+    .container,
+    .widget-area {
+        max-width: var(--xlWidth);
+        padding: 40px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .container,
+    .widget-area {
+        max-width: calc(var(--lgWidth) - 40px);
+        padding: 40px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .container,
+    .widget-area {
+        max-width: calc(var(--mdWidth) - 24px);
+        padding: 40px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container,
+    .widget-area {
+        max-width:  calc(var(--smWidth) - 24px);
+        padding: 32px 24px;
+    }
+    #searchform input[type="text"] {
+        border-bottom: 0;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}
+@media screen and (max-width: 680px) {
+    body {
+        font-size: 14px;
+    }
+    .container,
+    .widget-area {
+        max-width: calc(100% - 24px);
+        padding: 24px;
+    }
+}
