@@ -10,10 +10,12 @@ html {
 :root {
     --black-bg: #101010;
     --black-txt: #434343;
+    --black-txt2: #767676;
     --white: #FFFFFF;
     --white-h: #F8F8F8;
     --white-txt: #BEBEBE;
     --gray-04: #BEBEBE;
+    --gray-07:#626262;
     --blue: #2EA4FF;
     --blue-bg:#0063CA;
 }
@@ -143,6 +145,16 @@ h2 {
     line-height: 110%; /* 55px */
     letter-spacing: -3px;
 }
+h4 {
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+    letter-spacing: -0.6px;
+    text-decoration-line: underline;
+}
+
 
 a {
     color: var(--white);
@@ -153,6 +165,14 @@ a:hover {
 }
 p {
     margin: 0;
+}
+.btn-blue {
+    display: block;
+    color: var(--blue);
+    border-radius: 35px;
+    border: 1px solid var(--blue);
+    padding: 16px 0;
+    text-align: center;
 }
  /* разный фон для разных страниц */
 body.home {
