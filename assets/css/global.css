@@ -157,6 +157,7 @@ h4 {
 
 
 a {
+    display: block;
     color: var(--white);
     text-decoration: none;
 }
@@ -188,6 +189,37 @@ body.service {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 0 25px;
+}
+/* иконки */
+.icons a {
+    width: 65px;
+    height: 65px;
+}
+.icon-vk {
+    background-image: url(../img/icons/vk.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.icon-tg {
+    background-image: url(../img/icons/tg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.icon-wa {
+    background-image: url(../img/icons/wa.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.icon-hello {
+    display: block;
+    /* width: 48px;
+    height: 48px; */
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    color: #000;
 }
 /* адаптив */
 
