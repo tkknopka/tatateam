@@ -295,6 +295,58 @@
         .icons {
             justify-content: center;
         }
+    }   
+}
+.footer {
+    .grid-5 {
+        gap: 25px;
     }
-    
+    .footer-col {
+        border-right: 1px solid var(--nav-active-punkt-black-bg);
+        padding: 16px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        &:last-child {
+            border-right:0;
+        }
+    }
+}
+.footer__top {
+    border-bottom: 1px solid var(--nav-active-punkt-black-bg);
+    border-top: 1px solid var(--nav-active-punkt-black-bg);
+    padding: 25px 0px;
+}
+.footer__body {
+    padding: 25px 0px;
+    letter-spacing: -0.04em;
+    .footer-col {
+        nav ul, .footer-contacts, .footer-partners {
+            display: flex;
+            flex-direction: column;
+            gap:8px;
+        }
+        span {
+            display: block;
+        }
+        .footer-contacts a, .footer-partners a, .address {
+            color: var(--nav-active-punkt-black-bg);
+        }
+        .address {
+            font-style: normal;
+        }
+    }
+}
+.footer__bottom {
+    border-top: 1px solid var(--nav-active-punkt-black-bg);
+    padding: 25px 0px;
+    .footer-col {
+        padding: 0;
+        border:0;
+        font-size: 13px;
+        color: var(--nav-active-punkt-black-bg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 13px;
+    }
 }
