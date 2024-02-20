@@ -9,15 +9,17 @@ html {
 /* цвета */
 :root {
     --black-bg: #101010;
-    --black-txt: #434343;
-    --black-txt2: #767676;
-    --white: #FFFFFF;
-    --white-h: #F8F8F8;
-    --white-txt: #BEBEBE;
-    --gray-04: #BEBEBE;
-    --gray-07:#626262;
-    --blue: #2EA4FF;
-    --blue-bg:#0063CA;
+	--black-text: #434343;
+	--black-heading: #101010;
+	--black-podpis: #767676;
+	--white: #FFFFFF;
+	--white-heading: #f8f8f8;
+	--white-text: #bebebe;
+	--blue-primary: #2ea4ff;
+	--blue-800: #0063ca;
+	--nav-active-punkt-black-bg: #626262;
+	--nav-active-punkt-white-bg: #bebebe;
+	--red-acrobat: #c80a0a;
 }
 /* переменные */
 :root {
@@ -82,7 +84,7 @@ body {
 
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: var(--font-family);
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -130,7 +132,7 @@ button {
     display: none;
 }
 h1 {
-    font-family: Gilroy, sans-serif;
+    font-family: var(--second-family);
     font-size: 100px;
     font-style: normal;
     font-weight: 300;
@@ -138,7 +140,7 @@ h1 {
     letter-spacing: -6px;
 }
 h2 {
-    font-family: Gilroy, sans-serif;
+    font-family: var(--second-family);
     font-size: 50px;
     font-style: normal;
     font-weight: 300;
@@ -146,7 +148,7 @@ h2 {
     letter-spacing: -3px;
 }
 h4 {
-    font-family: Arial;
+    font-family: var(--font-family);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -158,31 +160,31 @@ h4 {
 
 a {
     display: block;
-    color: var(--white);
+    color: var(--white-heading);
     text-decoration: none;
 }
 a:hover {
-    color: var(--blue);
+    color: var(--blue-primary);
 }
 p {
     margin: 0;
 }
 .btn-blue {
     display: block;
-    color: var(--blue);
+    color: var(--blue-primary);
     border-radius: 35px;
-    border: 1px solid var(--blue);
+    border: 1px solid var(--blue-primary);
     padding: 16px 0;
     text-align: center;
 }
  /* разный фон для разных страниц */
 body.home {
     background-color:var(--black-bg);
-    color: var(--white-h);
+    color: var(--white-heading);
 }
 body.service {
     background-color:var(--white);
-    color: var(--black-txt);
+    color: var(--black-text);
 }
 /* сетка grid */
 .grid-5 {
@@ -211,15 +213,8 @@ body.service {
     background-repeat: no-repeat;
 }
 .icon-hello {
-    display: block;
-    /* width: 48px;
-    height: 48px; */
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 130%;
-    letter-spacing: -0.01em;
-    color: #000;
+    width: 48px;
+    height: 48px;
 }
 /* адаптив */
 

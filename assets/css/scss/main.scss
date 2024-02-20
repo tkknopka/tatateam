@@ -59,7 +59,7 @@
                     height: 64px;
                     width: 64px;
                     border-radius: 45px;
-                    border: 1px solid var(--Gray-07, #626262);
+                    border: 1px solid var(--nav-active-punkt-black-bg);
                     padding: 16px;
                     justify-content: center;
                     align-items: center;
@@ -72,12 +72,12 @@
 // бегущая строка
 .running-line {
     align-items:center;
-    background-color: var(--blue-bg);
+    background-color: var(--blue-800);
     height: 72px;
     overflow-x: hidden;
     span {
         animation: marquee 18s infinite linear;
-        font-family: Gilroy, sans-serif;
+        font-family: var(--second-family);
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
@@ -120,7 +120,7 @@
         width: 100%;
         color: var(--white-text, #BEBEBE);
         text-align: center;
-        font-family: Gilroy;
+        font-family: var(--second-family);
         font-size: 32px;
         font-style: italic;
         font-weight: 300;
@@ -130,7 +130,7 @@
     span {
         display: block;
         color: var(--white-text, #BEBEBE);
-        font-family: Gilroy;
+        font-family: var(--second-family);
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
@@ -159,7 +159,7 @@
     }
 }
 .portfolio {
-    border-left: 1px solid var(--gray-07);
+    border-left: 1px solid var(--nav-active-punkt-black-bg);
     padding-left: 277px;
     h2{
         margin-bottom: 80px;
@@ -207,8 +207,8 @@
         align-self: stretch;
         span {
             display: block;
-            color: var(--white-h);
-            font-family: Arial;
+            color: var(--white-text);
+            font-family: var(--font-family);
             font-size: 15px;
             font-style: normal;
             font-weight: 400;
@@ -216,7 +216,7 @@
             letter-spacing: -0.6px;
         }
         .type {
-            color: var(--black-txt2);
+            color: var(--black-podpis);
             display: flex;
             align-items:center;
             &::before {
@@ -224,14 +224,14 @@
                 display: inline-block;
                 width: 6px;
                 height: 6px;
-                background-color: var(--blue);
+                background-color: var(--blue-primary);
                 border-radius: 50%;
                 margin-right: 4px;
             }
         }
     }
     &:hover {
-        color: var(--white-h);
+        color: var(--white-heading);
     }
 }
 .contacts {
@@ -250,7 +250,7 @@
         justify-content: center;
         &:first-child {
             background-color: var(--white);
-            color: var(--black-txt);
+            color: var(--black-text);
             gap: 16px;
             border-radius: 40px 0 0 40px;
             padding: 80px;
@@ -259,16 +259,16 @@
             }
         }
         &:last-child {
-            background-color: var(--blue-bg);
-            color: var(--white-h);
+            background-color: var(--blue-800);
+            color: var(--white-heading);
             gap: 84px;
             border-radius: 0 40px 40px 0;
             padding: 80px;
             p {
-                font-family: Arial;
+                font-family: var(--font-family);
                 font-weight: 400;
                 font-size: 20px;
-                line-height: 26px;
+                line-height: 130%;
                 letter-spacing: -0.03em;
                 text-align: center;
             }
