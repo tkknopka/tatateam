@@ -164,7 +164,7 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: var(--blue-primary);
+    text-decoration: underline;
 }
 p {
     margin: 0;
@@ -176,6 +176,9 @@ p {
     border: 1px solid var(--blue-primary);
     padding: 16px 0;
     text-align: center;
+}
+.link-blue {
+    color: var(--blue-primary);
 }
  /* разный фон для разных страниц */
 body.home {

@@ -21,7 +21,7 @@
     nav ul {
         gap: 25px;
         a:hover {
-            color:var(--blue);
+            text-decoration: underline;
         }
     }
 }
@@ -191,6 +191,9 @@
     &:nth-child(5) {
         padding-top: 80px;
     }
+    &:hover {
+        text-decoration: none;
+    }
     .portfolio-item__img {
         width: inherit;
         margin-bottom: 25px;
@@ -354,5 +357,8 @@
         flex-direction: column;
         justify-content: center;
         gap: 13px;
+    }
+    .copyright p span {
+        text-decoration: underline;
     }
 }
