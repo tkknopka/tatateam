@@ -293,7 +293,16 @@
                 margin-bottom: 24px;
             }
             .callback a, .contact a {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 130%;
+                letter-spacing: -0.04em;
                 text-decoration: underline;
+                text-decoration-skip-ink: none;
+                &:hover {
+                    color: var(--blue-primary);
+                }
             }
             .contact a {
                 margin-bottom: 12px;
