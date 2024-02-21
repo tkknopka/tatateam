@@ -66,6 +66,14 @@
                     align-items: center;
                     margin-bottom: 12px;
                 }
+                span {
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 130%;
+                    letter-spacing: -0.03em;
+                    color: var(--white-heading);
+                }
             }
         }
     }
@@ -300,6 +308,13 @@
         }
         .icons {
             justify-content: center;
+            gap: 12px;
+            a {
+                border-radius: 50%;
+                &:hover {
+                    background-color: var(--blue-primary);
+                }
+            }
         }
     }   
 }
