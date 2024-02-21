@@ -177,6 +177,10 @@ p {
     padding: 16px 0;
     text-align: center;
 }
+.btn-blue:hover {
+    text-decoration: none;
+    color: var(--white);
+}
 .link-blue {
     color: var(--blue-primary);
 }
