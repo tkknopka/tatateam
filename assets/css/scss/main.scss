@@ -303,7 +303,6 @@
 .footer {
     .grid-5 {
         gap: 25px;
-        min-height: 256px;
     }
     .footer-col {
         border-right: 1px solid var(--nav-active-punkt-black-bg);
@@ -323,6 +322,9 @@
 .footer__body {
     padding: 25px 0px;
     letter-spacing: -0.04em;
+    .grid-5 {
+        min-height: 256px;
+    }
     .footer-col {
         nav ul, .footer-contacts, .footer-partners {
             display: flex;
