@@ -1,5 +1,6 @@
 // Шапка
 .header {
+    border-bottom: 1px solid var(--nav-active-punkt-black-bg);
     .container {
         padding: 16px 0px;
     }
@@ -142,6 +143,8 @@
 // Нам доверяют
 .clientele {
     padding: 80px 0;
+    border-bottom: 1px solid var(--nav-active-punkt-black-bg);
+    border-top: 1px solid var(--nav-active-punkt-black-bg);
     h2 {
         text-align: center;
         margin-bottom: 80px;
@@ -300,6 +303,7 @@
 .footer {
     .grid-5 {
         gap: 25px;
+        min-height: 256px;
     }
     .footer-col {
         border-right: 1px solid var(--nav-active-punkt-black-bg);
