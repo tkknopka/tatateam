@@ -1,3 +1,4 @@
+'use strict'
 // кастомные функции
 jQuery(function ($) {
     // mobile menu
