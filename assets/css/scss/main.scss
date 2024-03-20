@@ -172,6 +172,10 @@
     padding-top: 180px;
     .btn-blue {
         width: 100%;
+        &:hover {
+            border: 1px solid var(--white);
+            background-color: var(--blue-primary);
+        }
     }
 }
 .portfolio {
