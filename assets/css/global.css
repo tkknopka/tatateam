@@ -252,6 +252,9 @@ body.service {
         max-width:  calc(var(--smWidth) - 24px);
         padding: 32px 24px;
     }
+    .header .container {
+        padding: 32px;
+    }
     #searchform input[type="text"] {
         border-bottom: 0;
     }
@@ -269,6 +272,9 @@ body.service {
     .container,
     .widget-area {
         max-width: calc(100% - 24px);
+        padding: 24px;
+    }
+    .header .container {
         padding: 24px;
     }
 }
