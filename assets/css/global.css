@@ -137,7 +137,7 @@ h1 {
     font-style: normal;
     font-weight: 300;
     line-height: 100%; /* 100px */
-    letter-spacing: -6px;
+    letter-spacing: -0.06em;
 }
 h2 {
     font-family: var(--second-family);
@@ -145,7 +145,7 @@ h2 {
     font-style: normal;
     font-weight: 300;
     line-height: 110%; /* 55px */
-    letter-spacing: -3px;
+    letter-spacing: -0.06em;
 }
 h4 {
     font-family: var(--font-family);
@@ -194,7 +194,7 @@ body.service {
     color: var(--black-text);
 }
 /* сетка grid */
-.grid-5 {
+.grid-col {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 0 25px;
@@ -223,37 +223,50 @@ body.service {
     width: 48px;
     height: 48px;
 }
+.header .container {
+    padding: 16px 0px;
+}
 /* адаптив */
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1440px) {
     .container,
     .widget-area {
         max-width: var(--xlWidth);
         padding: 40px;
+    }
+    .header .container {
+        padding: 16px 40px;
     }
 }
 @media screen and (max-width: 1280px) {
     .container,
     .widget-area {
         max-width: calc(var(--lgWidth) - 40px);
-        padding: 40px;
+        padding: 0px 40px;
+    }
+    .header .container {
+        padding: 16px 40px;
     }
 }
 @media screen and (max-width: 1024px) {
     .container,
     .widget-area {
         max-width: calc(var(--mdWidth) - 24px);
-        padding: 40px;
+        padding: 0px 12px;
+    }
+    .header .container {
+        padding: 16px 12px;
+    }
+    h1 {
+        font-size: 80px;
+        line-height: 80px;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 912px) {
     .container,
     .widget-area {
         max-width:  calc(var(--smWidth) - 24px);
-        padding: 32px 24px;
-    }
-    .header .container {
-        padding: 32px;
+        
     }
     #searchform input[type="text"] {
         border-bottom: 0;
@@ -264,17 +277,26 @@ body.service {
     .mobile {
         display: block;
     }
+    /* сетка grid */
+    .grid-col {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 @media screen and (max-width: 680px) {
     body {
         font-size: 14px;
     }
-    .container,
-    .widget-area {
-        max-width: calc(100% - 24px);
-        padding: 24px;
+    /* сетка grid */
+    .grid-col {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .header .container {
-        padding: 24px;
+    h1 {
+        font-size: 45px;
+        line-height: 100%;
     }
+    h2 {
+        font-size: 29px;
+        line-height: 110%;
+    }
+    
 }

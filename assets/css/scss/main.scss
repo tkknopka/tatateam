@@ -1,9 +1,6 @@
 // Шапка
 .header {
     border-bottom: 1px solid var(--nav-active-punkt-black-bg);
-    .container {
-        padding: 16px 0px;
-    }
 }
 .header-items {
     align-items:center;
@@ -346,7 +343,7 @@
     }   
 }
 .footer {
-    .grid-5 {
+    .grid-col {
         gap: 25px;
     }
     .footer-col {
@@ -367,7 +364,7 @@
 .footer__body {
     padding: 25px 0px;
     letter-spacing: -0.04em;
-    .grid-5 {
+    .grid-col {
         min-height: 256px;
     }
     .footer-col {
@@ -407,14 +404,13 @@
 
 /* адаптив */
 
-@media screen and (max-width: 1360px) {
-    .header .container {
-        padding: 16px 40px;
-    }
+@media screen and (max-width: 1440px) {
+    
 }
 @media screen and (max-width: 1280px) {
-    .header-items nav ul {
+    .header-items .menu3 ul {
         flex-wrap: wrap;
+        gap: 12px 25px;
     }
     .portfolio-item {
         &:nth-child(2) {
@@ -432,9 +428,55 @@
 @media screen and (max-width: 1024px) {
     
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 912px) {
+    .menu3, .header-items .header-item:last-child {
+        display: none;
+    }
+    .main-screen__items {
+        gap: 64px 25px;
+    }
+    .main-title, .main-screen__items .main-screen__item:first-child span {
+        text-align: center;
+    }
+    .main-screen__items .main-screen__item {
+        &:first-child,
+        &:first-child span,
+        &:last-child {
+            grid-column: span 3;
+        }
+        &:first-child h1 {
+            margin-bottom: 25px;
+        }
+        &:first-child span {
+            max-width: 220px;
+            margin: 0 auto;
+        }
+        &:last-child ul {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        &:last-child ul li {
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            text-align: center;
+        }
+    }
     
 }
 @media screen and (max-width: 680px) {
+    .main-screen__items .main-screen__item {
+        &:first-child, 
+        &:first-child span, 
+        &:last-child {
+            grid-column: span 1;
+        }
+        &:first-child {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0;
+        }
+        &:last-child ul {
+            grid-template-columns: 1fr;
+        }
+    }
     
 }
