@@ -181,6 +181,18 @@ p {
     text-decoration: none;
     color: var(--white);
 }
+.btn-blue2 {
+    display: flex;
+    min-width: 180px;
+    max-width: 1360px;
+    padding: 16px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 35px;
+    background: var(--blue-primary, #2EA4FF);
+}
 .link-blue {
     color: var(--blue-primary);
 }
