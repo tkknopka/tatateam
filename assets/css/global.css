@@ -244,7 +244,7 @@ body.service {
     .container,
     .widget-area {
         max-width: var(--xlWidth);
-        padding: 40px;
+        padding: 0 40px;
     }
     .header .container {
         padding: 16px 40px;
